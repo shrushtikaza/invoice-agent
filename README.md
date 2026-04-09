@@ -123,6 +123,12 @@ There are four routing outcomes:
 **Tax errors:** The agent computes expected GST from the stated rate and subtotal. A 2% tolerance accounts for paise rounding on large invoices. Above 2%, it flags with the specific discrepancy — not just "tax error" but "stated GST ₹12,000, expected ₹8,462 at 5% — verify with vendor." The reviewer has the numbers; they don't need to redo the arithmetic.
 
 ---
+ 
+## One thing I observed that I did not expect
+ 
+When I ran the tax error scenario (the Rajput Power Systems invoice), the agent correctly flagged the discrepancy — but it also flagged the vendor's watch-list status in the same output. Two separate flags, both accurate. What I hadn't expected was how the *combination* felt different from either flag alone.
+ 
+A tax calculation error on a routine invoice from a trusted vendor reads as probably a clerical mistake. A tax calculation error on a watch-list vendor reads as something worth taking seriously. The agent produces both flags independently and lets the reviewer see them together — but it doesn't synthesise them into a single escalated concern. That's probably correct behaviour for a prototype, but it made me notice that the severity of a flag is context-dependent in ways that a flat flag list doesn't capture.
 
 ## Project structure
 
