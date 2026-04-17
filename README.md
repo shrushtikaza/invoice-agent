@@ -40,7 +40,7 @@ invoice text
      │
      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Step 1: Extraction  (Gemini API)         │
+│  Step 1: Extraction  (Gemini API)                           │
 │  Extract fields into typed schema. Do not compute anything. │
 └────────────────────────────┬────────────────────────────────┘
                              │ ExtractionResult
@@ -62,7 +62,7 @@ invoice text
                   Structured output for reviewer
 ```
 
-The two roles are intentionally separated. Claude extracts; rules decide. This makes the decision logic auditable - a finance reviewer, or the CFO, can read `validator.py` and understand exactly what the agent is checking. There is no black box in the routing decision.
+The two roles are intentionally separated. Gemini extracts; rules decide. This makes the decision logic auditable - a finance reviewer, or the CFO, can read `validator.py` and understand exactly what the agent is checking. There is no black box in the routing decision.
 
 ---
 
