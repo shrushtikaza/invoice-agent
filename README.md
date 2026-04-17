@@ -12,7 +12,7 @@ Built for the CoVector AI take-home assignment.
 git clone https://github.com/your-username/invoice-agent
 cd invoice-agent
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY=your_key_here
+export GEMINI_API_KEY=your_key_here
 
 # Run a sample scenario
 python run.py --sample duplicate
