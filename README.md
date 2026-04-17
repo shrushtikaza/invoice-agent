@@ -40,7 +40,7 @@ invoice text
      │
      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Step 1: Extraction  (Claude API - claude-sonnet-4)         │
+│  Step 1: Extraction  (Gemini API)         │
 │  Extract fields into typed schema. Do not compute anything. │
 └────────────────────────────┬────────────────────────────────┘
                              │ ExtractionResult
